@@ -7,8 +7,9 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main() {
+    for (float x = -4; x <= 4; x += 0.5)
+        x - 1 != 0 ? cout << "x = " << x << ", y = "<< (x*x - 2*x + 2)/(x-1) << endl : cout << "Devision by zero" << endl;
 }

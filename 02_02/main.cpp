@@ -6,9 +6,17 @@
 //
 
 #include <iostream>
+#include <cmath>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main() {
+    double x, a;
+    cout << "Enter x and a" << endl;
+    cin >> x >> a;
+    
+    if (abs(x) < 1)
+        x != 0 ? cout << "w = " << (a * log(x)) << endl : cout << "Error" << endl;
+    else
+        a >= x * x  ? cout << "w = " << sqrt(a - x * x) << endl : cout << "Error" << endl;
 }

@@ -6,9 +6,14 @@
 //
 
 #include <iostream>
+#include <cmath>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main() {
+    double x, y, b;
+    cout << "Enter x, y and b" << endl;
+    cin >> x >> y >> b;
+    
+    b - y > 0 and b >= x ? cout << log(b-y)*sqrt(b-x) << endl : cout << "Error";
 }

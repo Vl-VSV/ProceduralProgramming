@@ -6,9 +6,16 @@
 //
 
 #include <iostream>
+#define _USE_MATH_DEFINES
+#include <cmath>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main() {
+    double R, r, h, l;
+    cout << "Enter R (top), r (bottom) and h" << endl;
+    cin >> R >> r >> h;
+    l = sqrt(h*h + (r-R)*(r-R));
+    cout << "V = " << M_PI * h * (R * R + R * r + r * r) / 3.0 << endl;
+    cout << "S = " << M_PI *(R*R + (R + r)*l + r*r) << endl;
 }
