@@ -12,7 +12,7 @@ using namespace std;
 
 int main() {
     ifstream F;
-    F.open("/Users/vladv/XCode Projects/ProceduralProgramming/03_03/Test.txt");
+    F.open("Test.txt");
     
     // Option 1
     /*
