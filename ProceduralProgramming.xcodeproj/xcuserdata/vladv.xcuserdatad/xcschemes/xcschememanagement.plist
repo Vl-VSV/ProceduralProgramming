@@ -72,7 +72,22 @@
 		<key>03_05.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>04_01.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>14</integer>
+		</dict>
+		<key>04_02.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>04_03.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
 		</dict>
 		<key>ProceduralProgramming.xcscheme_^#shared#^_</key>
 		<dict>
