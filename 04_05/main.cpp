@@ -24,12 +24,13 @@ int main()
     int height = consoleInfo.srWindow.Bottom - consoleInfo.srWindow.Top + 1;
     int width = consoleInfo.srWindow.Right - consoleInfo.srWindow.Left + 1;
     
-    // Расчет точек начальных точек / начало координат
+    // Функции для расчета координат по х и у и их округление
     auto GetX = [&](double x) { return int(x / 7 * width); };
     auto GetY = [&](double y) { return int((-y / 1 + 1) * (height / 2)); };
     
     // Координаты символа в консоли
     _COORD c;
+    // Рисование графика с шагом 0.02
     for (double i = 0; i < 7; i += 0.02)
     {
         // Расчет позиции
