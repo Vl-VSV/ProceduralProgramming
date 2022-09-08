@@ -62,7 +62,7 @@ int main(int argc, const char * argv[]) {
     for (int i = 0; i < 3; i++){
         cout << "Enter commission fees " << i + 1 << " seller" << endl;
         cin >> C[i];
-        S2 += С[i];
+        S2 += C[i];
     }
     
     for (int i = 0; i < 3; i ++){
