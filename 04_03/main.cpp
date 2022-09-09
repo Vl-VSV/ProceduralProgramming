@@ -34,8 +34,8 @@ int main(int argc, const char * argv[]) {
             cout << "Enter sides a and b: " << endl; cin >> a >> b; cout << Square(a,b) << endl;
             break;
         case 2:
-            float j, h;
-            cout << "Enter side a and height h: " << endl; cin >> j >> h; cout << Triangle(j, h) << endl;
+            float j, h, o;
+            cout << "Enter side a, b and c: " << endl; cin >> j >> h >> o; cout << Triangle(j, h, o) << endl;
             break;
         case 3:
             float r;
