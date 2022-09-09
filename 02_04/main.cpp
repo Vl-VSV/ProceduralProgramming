@@ -15,6 +15,9 @@ int main() {
     cin >> N;
     cout << endl;
     
+    if (N <= 0)
+        N=1;
+    
     for (int i = N; i < N + 10; i++)
         cout << i << endl;
 }
