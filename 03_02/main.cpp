@@ -18,6 +18,9 @@ int main()
     cout << "Enter sum, month payment and numbers of years:" << endl;
     cin >> S >> m >> n;
     
+    if (S <= 0 || m <= 0 || n <= 0{
+        cout << "Error"<<endl;
+    }
     p = ((12 * m - 1) / S) * 100;
     cout << "Кредит давался под " << p << " %" << endl;
 
