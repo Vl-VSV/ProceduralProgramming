@@ -22,6 +22,6 @@ int main() {
     cout << "Разность " << n1-n2<< endl;
     cout << "Произведение " << n1*n2 << endl;
 
-    n2 != 0 ? cout << "Целая часть деления " << int(n1/n2) << endl: cout << "n2 == 0, division by zero";
+    n2 != 0 ? cout << "Целая часть деления " << n1/n2 << endl: cout << "n2 == 0, division by zero";
     
 }
