@@ -80,3 +80,31 @@ int main(int argc, const char * argv[]) {
     
     
 }
+
+
+/*
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string FromDec(int x, int base){
+  string n, alf = "0123456789ABCDEFGHIJKL";
+  while (x > 0){
+    n = alf[x%base] + n;
+    x /= base;
+  }
+  return n;
+}
+
+int ToDec(int base, string x){
+  int n;
+  return 0;
+}
+
+int main() {
+  string n; cout << "Enter N: " << endl; cin >> n;
+  int base; cout << "Enter Base N: " <<endl; cin >> base;
+  //cout << FromDec(152 ,3);
+}
+*/
