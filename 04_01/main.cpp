@@ -13,7 +13,7 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     // Create File and added 10 numbers
-    ofstream fout("/Users/vladv/XCode Projects/ProceduralProgramming/04_01/Test.txt");
+    ofstream fout("Test.txt");
     
     double a[10];
     double s = 0;
@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
     
     // Open file, read and print 10 numbers
     
-    ifstream fin("/Users/vladv/XCode Projects/ProceduralProgramming/04_01/Test.txt");
+    ifstream fin("Test.txt");
     for (int i = 0; i < 10; i++)
         s += a[i];
     
