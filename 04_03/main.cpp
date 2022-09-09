@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 const float pi = 3.141592653589793238;
@@ -14,8 +15,9 @@ float Square(float a, float b){
     return a*b;
 }
 
-float Triangle(float a, float h){
-    return a*h/2;
+float Triangle(float a, float b, float c){
+    float p = (a+b+c)/2;
+    return sqrt(p*(p-a)*(p-b)*(p-c));
 }
 
 float Circle(float r){
