@@ -16,6 +16,10 @@ float Square(float a, float b){
 }
 
 float Triangle(float a, float b, float c){
+    if (a > b + c || b > a + c || c > a + b){
+        cout << "Incorrect triangle" << endl;
+        exit(0);
+    }
     float p = (a+b+c)/2;
     return sqrt(p*(p-a)*(p-b)*(p-c));
 }
@@ -23,7 +27,7 @@ float Triangle(float a, float b, float c){
 float Circle(float r){
     return pi*r*r;
 }
-    
+
 int main(int argc, const char * argv[]) {
     int f;
     cout << "1 - square, 2 - triangle, 3 - circle" << endl; cin >> f;

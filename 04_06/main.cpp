@@ -10,9 +10,21 @@
 
 using namespace std;
 
+int chek(string n){
+    for (int i = 0; i < n.length() - 3; i++){
+        if (n[i] == n[i + 1] &&  n[i+2] == n[i+1] && n[i+2] == n[i+3]){
+            cout << "Incorrect Num!";
+            exit(0);
+        }
+    }
+    return 0;
+}
+
 int main(){
     string n;
     cout << "Enter num: "; cin >> n; cout << endl;
+    
+    check(n);
     
     map <char, int> a;
     a['M'] = 1000;
