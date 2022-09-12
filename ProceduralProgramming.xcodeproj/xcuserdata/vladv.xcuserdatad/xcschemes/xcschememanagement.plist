@@ -129,6 +129,16 @@
 			<key>orderHint</key>
 			<integer>25</integer>
 		</dict>
+		<key>05_03.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
+		<key>05_03_02.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
 		<key>ProceduralProgramming.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
