@@ -28,8 +28,8 @@ int NodV2(int a, int b){
 int main(int argc, const char * argv[]) {
     int a, b;
     cout << "Enter numbers a and b: "; cin >> a >> b;
-    cout << NodV1(a, b) << endl;
-    cout << NodV2(a, b) << endl;
+    cout << NodV1(abs(a), abs(b)) << endl;
+    cout << NodV2(abs(a), abs(b)) << endl;
     
     return 0;
 }
