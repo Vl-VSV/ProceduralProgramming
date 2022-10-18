@@ -5,41 +5,39 @@
 //  Created by Vlad V on 16.09.2022.
 //
 
-#include <iostream>
 #include <algorithm>
-#include <ctime>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-void PeremeshivanieMassiva(int m[], int size) {
-    srand(time(0));
-    for (int i = 0; i < size; i++)
-        swap(m[i], m[rand() % size]);
-}
+int main() {
+  int a[1000], i = 0, n, score = 0, ss = 0;
+  string s;
+  char c[1000];
 
-int main(int argc, const char * argv[]) {
-    
-    int n, k = 0;
-    cout << "Enter N: "; cin >> n; cout << endl;
-    
-    int a[n];
-    for (int i = 0; i < n; i++)
-        a[i] = i + 1;
-        
-    PeremeshivanieMassiva(a, n);
-    
-    for (int i = 0; i < n; i++){
-        if (a[i] == i + 1){
-            k++;
-        }
-        cout << a[i] << ", ";
+  cout << "Enter numbers of balls: ";
+  cin >> n;
+
+  for (i = 0; i < n; i++) {
+    a[i] = i;
+    s += to_string(a[i]);
+  }
+
+  sort(s.begin(), s.end());
+
+  do {
+    for (i = 0; i < n; i++) {
+      c[i] = s[i];
+      if (c[i] == i + 48) {
+        score++;
+        break;
+      }
     }
-    
-    cout << endl;
-    cout << "Number of matches = " << k << endl;
-    cout << "Probability of matches = " << float(k)/float(n) << endl;
-    cout << endl;
-    
-    return 0;
-}
+    ss++;
+  } while (next_permutation(s.begin(), s.end()));
 
+  cout << "Number of matches = " << score << '\n';
+
+  return 0;
+}
